@@ -26,6 +26,9 @@ Pinteresting::Application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+  # added below to solve issues with precompile
+  config.assets.initialize_on_precompile = false
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
